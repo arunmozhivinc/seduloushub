@@ -1,0 +1,68 @@
+/* Make the whole page take full height */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #003366;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0055aa;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #003366;
+}
+
+/* Content that grows */
+.content {
+  flex: 1; /* This makes the content area fill available space */
+  padding: 40px 20px;
+  text-align: center;
+}
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.course-box {
+  background-color: #f0f0f0;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 18px;
+}
+
+
+/* Footer always at the bottom */
+.footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
